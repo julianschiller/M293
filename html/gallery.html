@@ -3,28 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M293 - Julian Schiller</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Gallery - M293 - Julian Schiller</title>
   </head>
   <body>
     <header>
-      <h1>
-        <a href="../index.html">Modul 293</a>
-      </h1>
+      <h1><a href="../index.html">Modul 293</a></h1>
       <nav>
-        <ul id="nav">
-          <li>
-            <a href="./gallery.html">Gallery</a>
-          </li>
-          <li>
-            <a href="./feedback.html">Feedback</a>
-          </li>
+        <ul>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./feedback.html">Feedback</a></li>
         </ul>
-
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <a href="./feedback.html">Umfrage</a>
-        </button>
       </nav>
     </header>
+    <nav class="sidebar">
+      <ul>
+        <li class="nav-element"><a href="../index.html">Home</a></li>
+        <li class="nav-element" id="active">
+          <a href="./gallery.html">Gallery</a>
+        </li>
+        <li class="nav-element"><a href="./feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
     <main>
       <section>
         <h2>Medienformate</h2>
@@ -41,6 +41,7 @@
           Vorteile: Schnell, Kontrolle über die Datei. <br />
           Nachteile: Erhöht die Dateigröße der Website, muss verwaltet werden.
         </p>
+        
         <h3>Externes Bild</h3>
         <img
           src="https://media.xxxlutz.com/i/xxxlutz/PIvfevco6UTNU69s-YaIUFqA/?fmt=auto&%24hq%24=&w=1200"
@@ -69,12 +70,13 @@
           width="600"
           height="450"
           style="border: 0"
-          allowfullscreen=""></iframe>
+          allowfullscreen></iframe>
         <p>
           Hier ist eine eingebettete Google Maps Karte. <br />
           Vorteile: Einfache Integration von Kartenmaterial, interaktiv. <br />
           Nachteile: Datenschutzbedenken, Abhängigkeit von Google.
         </p>
+        
         <h3>Audio</h3>
         <audio src="../audios/town-10169.mp3" controls></audio>
 

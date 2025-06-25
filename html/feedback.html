@@ -4,30 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <!-- Einbinden von Tailwind CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet" />
-    <title>M293 - Julian Schiller</title>
+    <title>Feedback - M293 - Julian Schiller</title>
   </head>
   <body>
     <header>
-      <h1 class="text-4xl font-bold">
-        <a href="../index.html">Modul 293</a>
-      </h1>
+      <h1><a href="../index.html">Modul 293</a></h1>
       <nav>
-        <ul id="nav">
-          <li>
-            <a href="./gallery.html">Gallery</a>
-          </li>
+        <ul>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./feedback.html">Feedback</a></li>
         </ul>
-        <a href="./feedback.html">
-          <button class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">Umfrage</button>
-        </a>
       </nav>
     </header>
+    <nav class="sidebar">
+      <ul>
+        <li class="nav-element"><a href="../index.html">Home</a></li>
+        <li class="nav-element">
+          <a href="./gallery.html">Gallery</a>
+        </li>
+        <li class="nav-element" id="active"><a href="./feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
     <main>
-      <h2 class="text-3xl font-semibold">Bitte die folgende Umfrage ausfüllen</h2>
+      <h2>Bitte die folgende Umfrage ausfüllen</h2>
       <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
         <label for="anrede">Anrede: *</label>
         <div class="radio-container">
@@ -40,17 +39,14 @@
         </div>
 
         <label for="vorname">Vorname: *</label>
-
         <input type="text" name="vorname" id="vorname" autofocus required minlength="2" />
 
         <label for="nachname">Nachname: *</label>
-
         <input type="text" name="nachname" id="nachname" required minlength="2" />
 
         <label for="email">Email: *</label>
-
         <input
-          type="text"
+          type="email"
           name="email"
           id="email"
           required
@@ -58,19 +54,15 @@
           title="Bitte gib eine gültige E-Mail-Adresse ein (z.B. name@domain.com)" />
 
         <label for="tel">Telefonnummer:</label>
-
         <input type="tel" name="tel" id="tel" readonly />
 
         <label for="passwort">Passwort: *</label>
-
         <input type="password" name="passwort" id="password" minlength="8" />
 
         <label for="geburtstag">Geburtstag:</label>
-
         <input type="date" name="geburtstag" id="geburtstag" min="1900-01-01" max="2007-06-09" />
 
         <label for="url">Lieblingswebsite:</label>
-
         <input type="url" name="url" id="url" />
 
         <label>Welche Programmiersprachen kennst du?</label>
@@ -88,7 +80,6 @@
         </div>
 
         <label for="kurs">Lieblingsmodul:</label>
-
         <select name="kurs" id="kurs">
           <option value="m293">Modul 293</option>
           <option value="m306">Modul 431</option>
@@ -96,10 +87,9 @@
         </select>
 
         <label for="nachricht">Geben Sie ihre Nachricht ein: *</label>
+        <textarea id="nachricht" name="nachricht" required maxlength="1000"></textarea>
 
-        <textarea id="nachricht" required maxlength="1000"></textarea>
-
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Absenden" />
       </form>
     </main>
     <footer>&copy; Website erstellt von Julian Schiller</footer>
