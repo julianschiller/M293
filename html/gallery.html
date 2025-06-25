@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M293 - Julian Schiller</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="./index.html">Modul 293</a>
+      </h1>
+      <nav>
+        <ul id="nav">
+          <li>
+            <a href="./gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="./feedback.html">Feedback</a>
+          </li>
+        </ul>
+
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <a href="./feedback.html">Umfrage</a>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Medienformate</h2>
+        <p>Hier sind einige Beispiele für verschiedene Medienformate:</p>
+
+        <h3>Lokales Bild</h3>
+        <picture>
+          <source srcset="../images/picture.webp" type="image/webp" width="560" height="315" />
+          <source srcset="../images/picture.avif" type="image/avif" width="560" height="315" />
+          <img src="../images/picture.png" alt="Ein schönes Bild" width="560" height="315" />
+        </picture>
+        <p>
+          Dieses Bild wird lokal von der Festplatte geladen. <br />
+          Vorteile: Schnell, Kontrolle über die Datei. <br />
+          Nachteile: Erhöht die Dateigröße der Website, muss verwaltet werden.
+        </p>
+        <h3>Externes Bild</h3>
+        <img
+          src="https://media.xxxlutz.com/i/xxxlutz/PIvfevco6UTNU69s-YaIUFqA/?fmt=auto&%24hq%24=&w=1200"
+          alt="Ein Bild eines Löwen"
+          width="560"
+          height="315" />
+
+        <h3>Externes Video (YouTube)</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZfDtDuomDn4?si=H4_LP8-XgDZ5HnG1"
+          title="YouTube video player"
+          frameborder="0"
+          allowfullscreen></iframe>
+        <p>
+          Dieses Video wird von YouTube eingebettet. <br />
+          Vorteile: Keine Last auf dem eigenen Server, einfache Einbettung.
+          <br />
+          Nachteile: Abhängigkeit von YouTube, Datenschutzbedenken.
+        </p>
+
+        <h3>Google Maps</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9685139500596!2d2.2944815487955436!3d48.85837007298887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee38961a85!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1684771279344!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""></iframe>
+        <p>
+          Hier ist eine eingebettete Google Maps Karte. <br />
+          Vorteile: Einfache Integration von Kartenmaterial, interaktiv. <br />
+          Nachteile: Datenschutzbedenken, Abhängigkeit von Google.
+        </p>
+        <h3>Audio</h3>
+        <audio src="../audios/town-10169.mp3" controls></audio>
+
+        <h2>Navigation und Links</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href="mailto:julian.schiller@bbzbl-it.ch">Email: julian.schiller@bbzbl-it.ch</a>
+            </li>
+            <li>
+              <a href="tel:+41791234567">Telefon: +41 79 123 45 67</a>
+            </li>
+            <li>
+              <a href="https://www.geoguessr.com/de" target="_blank">Hier geht es zu geoguessr</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <footer>&copy; Website erstellt von Julian Schiller</footer>
+  </body>
+</html>

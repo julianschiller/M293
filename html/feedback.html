@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Einbinden von Tailwind CSS -->
+   <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <title>M293 - Julian Schiller</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-4xl font-bold">
+        <a href="./index.html">Modul 293</a>
+      </h1>
+      <nav>
+        <ul id="nav">
+          <li>
+            <a href="./gallery.html">Gallery</a>
+          </li>
+        </ul>
+        <a href="./feedback.html">
+          <button class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">Umfrage</button>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <h2 class="text-3xl font-semibold">Bitte die folgende Umfrage ausfüllen</h2>
+      <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+        <label for="anrede">Anrede: *</label>
+        <div class="radio-container">
+          <input type="radio" name="anrede" id="herr" value="Herr" required />
+          <label for="herr" class="selector">Herr</label>
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="anrede" id="frau" value="Frau" required />
+          <label for="frau" class="selector">Frau</label>
+        </div>
+
+        <label for="vorname">Vorname: *</label>
+
+        <input type="text" name="vorname" id="vorname" autofocus required minlength="2" />
+
+        <label for="nachname">Nachname: *</label>
+
+        <input type="text" name="nachname" id="nachname" required minlength="2" />
+
+        <label for="email">Email: *</label>
+
+        <input
+          type="text"
+          name="email"
+          id="email"
+          required
+          pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}"
+          title="Bitte gib eine gültige E-Mail-Adresse ein (z.B. name@domain.com)" />
+
+        <label for="tel">Telefonnummer:</label>
+
+        <input type="tel" name="tel" id="tel" readonly />
+
+        <label for="passwort">Passwort: *</label>
+
+        <input type="password" name="passwort" id="password" minlength="8" />
+
+        <label for="geburtstag">Geburtstag:</label>
+
+        <input type="date" name="geburtstag" id="geburtstag" min="1900-01-01" max="2007-06-09" />
+
+        <label for="url">Lieblingswebsite:</label>
+
+        <input type="url" name="url" id="url" />
+
+        <label>Welche Programmiersprachen kennst du?</label>
+        <div class="checkbox-container">
+          <input type="checkbox" id="sprache1" name="sprachen" value="JavaScript" />
+          <label for="sprache1" class="selector">JavaScript</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="sprache2" name="sprachen" value="Python" />
+          <label for="sprache2" class="selector">Python</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="sprache3" name="sprachen" value="Java" />
+          <label for="sprache3" class="selector">Java</label>
+        </div>
+
+        <label for="kurs">Lieblingsmodul:</label>
+
+        <select name="kurs" id="kurs">
+          <option value="m293">Modul 293</option>
+          <option value="m306">Modul 431</option>
+          <option value="m307">Modul 319</option>
+        </select>
+
+        <label for="nachricht">Geben Sie ihre Nachricht ein: *</label>
+
+        <textarea id="nachricht" required maxlength="1000"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>&copy; Website erstellt von Julian Schiller</footer>
+  </body>
+</html>
